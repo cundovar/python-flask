@@ -1,0 +1,1 @@
+from .functions import check_number,devineNombre, calculer_moyenne

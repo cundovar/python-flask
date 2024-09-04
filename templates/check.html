@@ -1,0 +1,44 @@
+<section>
+    <article>
+        <h1>Vérifiez un nombre</h1>
+        <form method="POST">
+            <input type="hidden" name="form_type" value="check_number">
+            <label for="number">Entrez un nombre (entre 1 et 3) :</label>
+            <input type="text" id="number" name="number" required><br><br>
+
+            <input type="submit" value="Vérifier">
+        </form>
+        {% if result_check %}
+        <p>Résultat du contrôle du nombre : {{ result_check }}</p>
+        {% endif %}
+    </article>
+
+    <article>
+        <h1>Comptez les voyelles</h1>
+        <form method="POST">
+            <input type="hidden" name="form_type" value="count_vowels">
+            <label for="chaine">Entrez une chaîne de caractères :</label>
+            <input type="text" id="chaine" name="chaine" required><br><br>
+
+            <input type="submit" value="Vérifier">
+        </form>
+    </article>
+    {% if result_voyelle %}
+    <p>Résultat de la recherche de voyelles : {{ result_voyelle }}</p>
+    {% endif %}
+    <article>
+        <h1>Calculateur</h1>
+        <form method="POST">
+            <input type="hidden" name="form_type" value="calculator">
+            <label for="calc">Entrez des notes séparées par des virgules :</label>
+            <input type="text" id="calc" name="calc" required><br><br>
+
+            <input type="submit" value="Vérifier">
+        </form>
+    </article>
+    {% if result_calc %}
+    <p>Résultat de la moyenne : {{ result_calc}}</p>
+    {% endif %}
+
+
+</section>
