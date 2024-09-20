@@ -35,5 +35,5 @@ def home():
     
     return render_template("base.html", result_check=result_check, result_voyelle=result_voyelle, result_calc=result_calc)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
